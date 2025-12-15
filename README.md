@@ -43,7 +43,7 @@ github-api-app/
 ├─ package.json # Project dependencies and npm scripts
 └─ README.md # Project documentation (this file)
 
-text
+
 
 ---
 
@@ -54,19 +54,19 @@ text
 git clone <YOUR_REPOSITORY_URL>
 cd github-api-app
 
-text
+
 
 ### 2. Install dependencies
 
 npm install
 
-text
+
 
 ### 3. Start the server
 
 npm run start
 
-text
+
 
 (Optional, if using nodemon:)
 
@@ -90,7 +90,7 @@ text
 
 { "status": "GitHub API Integration Running" }
 
-text
+
 
 ---
 
@@ -100,7 +100,7 @@ text
 
 GET /repos?username=<github_user>&language=<optional>&stars=<optional>
 
-text
+
 
 | Parameter | Required | Description | Example |
 |------------|-----------|-------------|----------|
@@ -112,7 +112,7 @@ text
 
 http://localhost:3000/repos?username=vercel&language=TypeScript&stars=500
 
-text
+
 
 ---
 
@@ -122,13 +122,12 @@ text
 
 GET /repo/:name/issues?username=<optional>
 
-text
+
 
 **Example:**
 
 http://localhost:3000/repo/next.js/issues?username=vercel
 
-text
 
 ---
 
@@ -140,7 +139,7 @@ text
 
 GET /item/0
 
-text
+
 
 **Example Output:**
 
@@ -150,7 +149,7 @@ text
 "stargazers_count": 120000
 }
 
-text
+
 
 ---
 
@@ -161,7 +160,7 @@ curl "http://localhost:3000/repos?username=vercel&stars=5000"
 curl "http://localhost:3000/repo/next.js/issues?username=vercel"
 curl "http://localhost:3000/item/0"
 
-text
+
 
 ---
 
