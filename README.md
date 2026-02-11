@@ -1,4 +1,4 @@
-# GitHub Repository Explorer
+# OctoCache
 
 This project is a Node.js and Express based API integration task built using the public GitHub REST API.  
 The application fetches public repository and issue data from GitHub, supports filtering, stores data in a local cache, and allows a detailed view of a selected item.
