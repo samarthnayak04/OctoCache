@@ -3,7 +3,7 @@
 This project is a Node.js and Express based API integration task built using the public GitHub REST API.  
 The application fetches public repository and issue data from GitHub, supports filtering, stores data in a local cache, and allows a detailed view of a selected item.
 
----
+
 
 ## Features
 
@@ -16,7 +16,7 @@ The application fetches public repository and issue data from GitHub, supports f
 - Single item detail retrieval using cached data
 - Error handling for invalid input, network errors, and empty cache access
 
----
+
 
 ## Tech Stack
 
@@ -27,9 +27,7 @@ The application fetches public repository and issue data from GitHub, supports f
 | HTTP Client | Axios                     |
 | Storage     | Local JSON (`cache.json`) |
 
----
 
----
 
 ## 📂 Project Structure
 
@@ -45,7 +43,7 @@ github-api-app/
 
 
 
----
+
 
 ## ⚙️ Installation & Setup
 
@@ -74,7 +72,7 @@ npm run dev
 
 text
 
----
+
 
 ## 🚀 API Endpoints
 
@@ -92,7 +90,6 @@ text
 
 
 
----
 
 ### 2. Fetch Repositories (Supports Filtering)
 
@@ -114,7 +111,7 @@ http://localhost:3000/repos?username=vercel&language=TypeScript&stars=500
 
 
 
----
+
 
 ### 3. Get Issues for a Repository
 
@@ -129,7 +126,7 @@ GET /repo/:name/issues?username=<optional>
 http://localhost:3000/repo/next.js/issues?username=vercel
 
 
----
+
 
 ### 4. Retrieve Single Cached Repository by Index
 
@@ -151,7 +148,6 @@ GET /item/0
 
 
 
----
 
 ## 💻 Example cURL Commands
 
@@ -162,8 +158,6 @@ curl "http://localhost:3000/item/0"
 
 
 
----
-
 ## 🧩 Error Handling Summary
 
 | Scenario | Expected Behavior |
@@ -173,7 +167,7 @@ curl "http://localhost:3000/item/0"
 | Invalid item index | Returns `404 - Item not found` |
 | API/network failure | Sends readable error message |
 
----
+
 
 ## 📝 Assumptions & Notes
 
@@ -182,7 +176,7 @@ curl "http://localhost:3000/item/0"
 - Cached data persists until overwritten by a new `/repos` request.
 - Repository issue count may vary or be empty depending on the project.
 
----
+
 
 ## 🏁 Conclusion
 
@@ -192,4 +186,4 @@ This project demonstrates:
 - Modular architecture with Node.js and Express.
 - Clear code organization and documentation.
 
----
+
